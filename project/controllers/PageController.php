@@ -4,6 +4,9 @@ namespace Project\Controllers;
 use \Core\Controller;
 use \Project\Models\Page;
 
+/**
+ *
+ */
 class PageController extends Controller {
 
 	private $pages;

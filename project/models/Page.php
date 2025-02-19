@@ -15,7 +15,7 @@
 
 		public function getAll() {
 			return $this->findMany("SELECT * FROM page");
-			return $this->findMany("SELECT id, title, text FROM page");
+			// return $this->findMany("SELECT id, title, text FROM page");
 		}
 	}
 ?>

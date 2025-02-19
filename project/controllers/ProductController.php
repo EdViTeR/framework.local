@@ -1,9 +1,11 @@
 <?php
 namespace Project\Controllers;
+
 use \Core\Controller;
+use \Project\Models\Products;
 
 /**
- * №1
+ *
  */
 class ProductController extends Controller {
 	
@@ -58,10 +60,20 @@ class ProductController extends Controller {
 	}
 
 	public function all() {
-		$this->title = 'Действие all контроллера Product';
-
+		$this->title = 'Список всех продуктов';
+		$data = (new Products)->getAll();
 		return $this->render('product/all', [
-			'products' 	=> $this->products,
+			'products' 	=> $data,
+			'title' 	=> $this->title,
+		]);
+	}
+
+	public function one($params) {
+		$this->title = 'Описание продукта';
+		$product = (new Products)->getById($params['id']);
+		return $this->render('product/one', [
+			'title' 	=> $this->title,
+			'product' 	=> $product,
 		]);
 	}
 }

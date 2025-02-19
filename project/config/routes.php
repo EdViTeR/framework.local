@@ -3,7 +3,8 @@
 	
 	return [
 		new Route('/product/all/', 'product', 'all'),
-		new Route('/product/:n/', 'product', 'show'),
+		new Route('/product/:id/', 'product', 'one'),
+
 		new Route('/user/all/', 'user', 'all'),
 		new Route('/user/first/:n/', 'user', 'first'),
 		new Route('/user/:id/', 'user', 'show'),
