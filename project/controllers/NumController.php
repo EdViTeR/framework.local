@@ -4,7 +4,7 @@ use \Core\Controller;
 use \Project\Models\Hello;
 
 /**
- * 
+ * №1
  */
 class NumController extends Controller {
 	

@@ -4,7 +4,7 @@ namespace Project\Controllers;
 use \Core\Controller;
 
 /**
- * 
+ * №2
  */ 
 class UserController extends Controller {
 	
@@ -20,10 +20,12 @@ class UserController extends Controller {
 		];
 	}
 
+	// №3
 	public function show($id) {
 		var_dump($this->users[$id['id']]);
 	}
 
+	// №4
 	public function info($name) {
 		foreach ($this->users as $key => $value) {
 			if ($value['name'] == $name['key']) {
@@ -32,12 +34,14 @@ class UserController extends Controller {
 		}
 	}
 
+	// №5
 	public function all() {
 		foreach ($this->users as $key => $value) {
 			echo $value['name'];
 		}
 	}
 
+	// №6
 	public function first($num) {
 		foreach ($this->users as $key => $value) {
 			if ($key <= $num['n']) {

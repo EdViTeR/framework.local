@@ -3,7 +3,7 @@ namespace Project\Controllers;
 use \Core\Controller;
 
 /**
- * 
+ * №1
  */
 class ProductController extends Controller {
 	
@@ -44,6 +44,7 @@ class ProductController extends Controller {
 		];
 	}
 
+	// №2
 	public function show($num) {
 		$this->title = 'Действие show контроллера Product';
 		

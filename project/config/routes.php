@@ -11,8 +11,11 @@
 
 		new Route('/test/:var1/:var2/', 'num', 'sum'),
 
+		new Route('/page/:id', 'page', 'one'),
+		new Route('/pages/', 'page', 'all'),
 		new Route('/page/act/', 'page', 'act'),
-		new Route('/page/:id/', 'page', 'show'),
+		new Route('/page/test/', 'page', 'test'),
+		// new Route('/page/:id/', 'page', 'show'),
 
 		new Route('/hello/', 'hello', 'index'),
 		
